@@ -1,0 +1,11 @@
+PROGRAM abs;
+VAR x:INTEGER;
+FUNCTION abss(x : INTEGER):INTEGER;
+    BEGIN
+        IF x < 0 THEN abss := 0-x
+        ELSE abss := x;
+    END;
+BEGIN
+    x := ReadI;
+    CALL WriteI(abss(x));
+END.

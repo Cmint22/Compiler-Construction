@@ -1,0 +1,12 @@
+PROGRAM Fibo;
+VAR n: INTEGER;
+FUNCTION fibo(p : INTEGER):INTEGER;
+    BEGIN
+        IF p = 0 THEN fibo := 0
+        ELSE IF p = 1 THEN fibo := 1
+        ELSE fibo :=fibo(p-1) + fibo(p-2);
+    END;
+BEGIN
+    n := ReadI;
+    CALL WriteI(fibo(n));
+END.
